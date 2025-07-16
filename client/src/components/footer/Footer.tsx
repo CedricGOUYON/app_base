@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
 	return (
-		<nav>
+		<nav className="footer">
 			<ul>
 				<li>
 					<Link to="/">Home</Link>

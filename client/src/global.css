@@ -1,11 +1,16 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
-	background-color: #008080;
+	background-color: var(--timberwolf-color);
 }
+
 :root {
-	--primary-color: #008080;
-	--secondary-color: #ffffff;
+	--teal-color: #008080;
+	--timberwolf-color: #dbd4d3;
+	--black-color: #000000;
+	--red-crayola: #e83151;
+	--sage: #d2cca1;
 }

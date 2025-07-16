@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	min-height: 5vh;
+	background-color: var(--teal-color);
+	z-index: 1000;
+}
