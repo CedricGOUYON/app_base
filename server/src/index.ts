@@ -18,25 +18,25 @@ app.use("/api", routes);
 
 // Ping principal
 app.get("/", (_req, res) => {
-  res.send("Backend Express en marche ✅");
+	res.send("Backend Express en marche ✅");
 });
 
 // Connexion MySQL + message terminal
 mysql
-  .createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-  })
-  .then(() => {
-    console.log(`🗄️ using database ${process.env.DB_NAME}`);
-  })
-  .catch((err) => {
-    console.error("❌ Erreur de connexion MySQL :", err);
-  });
+	.createConnection({
+		host: process.env.DB_HOST,
+		user: process.env.DB_USER,
+		password: process.env.DB_PASSWORD,
+		database: process.env.DB_NAME,
+	})
+	.then(() => {
+		console.log(`🗄️ using database ${process.env.DB_NAME}`);
+	})
+	.catch((err) => {
+		console.error("❌ Erreur de connexion MySQL :", err);
+	});
 
 // Lancement du serveur
 app.listen(PORT, () => {
-  console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`);
+	console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`);
 });

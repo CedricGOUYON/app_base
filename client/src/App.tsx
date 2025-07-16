@@ -4,14 +4,14 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-      <ToastContainer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Outlet />
+			<Footer />
+			<ToastContainer />
+		</>
+	);
 }
 
 export default App;
